@@ -28,7 +28,7 @@ public class Main {
         switch (number) {
             case 1:
                 System.out.println("A");
-                break; // 항상 break 키워드와 함꼐 쓰자 !!
+                break; // 항상 break 키워드와 함께 쓰자 !!
             case 2:
                 System.out.println("B");
                 break;
