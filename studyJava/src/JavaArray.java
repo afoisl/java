@@ -31,6 +31,7 @@ public class JavaArray {
         str2[0] = "white";
         System.out.println("2 " + str2[0]);
         System.out.println("3 " + str1[0]);
+
         // 기본자료형의 복사 (= 값복사)
        int a = 3;
        int b = a;
@@ -61,38 +62,23 @@ public class JavaArray {
                 }
                 System.out.println("A");
             }
+
         }
-        /*for(int i = 0; ; i++) {
-            if (i == 1) {
-                continue;
-            } if (i == 3) {
-                continue;
-            } if (i == 5) {
-                continue;
-            } if (i == 7) {
-                continue;
-            } if (i == 9) {
-                continue;
-            } if (i == 11) {
-                break;
-            }
-            System.out.println(i);
-        }*/
         for(int i = 0; ; i++) {
-            if (i == 1) {
+            if(i == 1) {
                 continue;
-            } if (i == 3) {
+            } if(i == 3) {
                 continue;
-            } if (i == 5) {
+            } if(i == 5) {
                 continue;
-            } if (i == 7) {
+            } if(i == 7) {
                 continue;
-            } if (i == 9) {
+            } if(i == 9) {
                 continue;
-            } if (i == 11) {
+            } if(i == 11) {
                 break;
             }
-            System.out.println(i);
+            System.out.print(i);
         }
     }
 }
