@@ -1,5 +1,6 @@
 package Java0313;
 
+import javax.lang.model.element.NestingKind;
 import java.util.Arrays;
 
 public class Ex2 {
@@ -8,5 +9,10 @@ public class Ex2 {
         // 스페이스는 카운트하지 마시오
         String string = "The best of both worlds";
         int count = 0;
+        for (int i=0; i< string.length(); i++) {
+//            if () {
+//                System.out.println(st);
+//            }
+        }
     }
 }
