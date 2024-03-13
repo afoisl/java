@@ -1,6 +1,8 @@
+package Java0307;
+
 import java.util.Scanner;
 
-public class JavaScanner {
+public class Java0307Scanner {
     public static void main(String[] args) {
 
         // 자바에서 입력값을 받는 방법

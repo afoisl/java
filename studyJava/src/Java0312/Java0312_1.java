@@ -1,6 +1,8 @@
+package Java0312;
+
 import java.util.Arrays;
 
-public class Z {
+public class Java0312_1 {
     public static void main(String[] args) {
         int [] arr = new int [] {1, 2, 8, 3, 2, 2, 2, 5, 1}; // 숫자배열은 반드시 양의 정수다
         int [] fr = new int [arr.length];
@@ -20,7 +22,6 @@ public class Z {
                 fr[i] = count;
             System.out.println(Arrays.toString(fr));
         }
-
         for(int i = 0; i < fr.length; i++){
             if(fr[i] != visited)
                 System.out.println("    " + arr[i] + "    |    " + fr[i]);

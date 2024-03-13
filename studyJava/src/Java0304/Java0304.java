@@ -1,3 +1,5 @@
+package Java0304;
+
 public class Java0304 {
 
     public static void main(String[] args) {

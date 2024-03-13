@@ -1,4 +1,6 @@
-public class JavaArray {
+package Java0305;
+
+public class Java0305Array3 {
     public static void main(String[] args) {
 
         int[] intArray1 = {1,2,3,4,5};

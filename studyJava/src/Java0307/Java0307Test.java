@@ -1,3 +1,5 @@
+package Java0307;
+
 import java.util.Arrays;
 import java.util.Random;
 

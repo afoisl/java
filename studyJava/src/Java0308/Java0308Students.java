@@ -1,3 +1,5 @@
+package Java0308;
+
 public class Java0308Students {
     public static void main(String[] args) {
         Students tom = new Students("Tom", 18, "Daejeon", "789456");

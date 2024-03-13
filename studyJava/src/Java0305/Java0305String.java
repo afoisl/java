@@ -1,3 +1,5 @@
+package Java0305;
+
 import java.rmi.ServerRuntimeException;
 import java.util.Arrays;
 

@@ -1,3 +1,5 @@
+package Java0305;
+
 public class Java0305 {
     public static void main(String[] args) {
         // break = 제어문의 중괄호를 탙출시키는 키워드
