@@ -9,10 +9,14 @@ public class Ex2 {
         // 스페이스는 카운트하지 마시오
         String string = "The best of both worlds";
         int count = 0;
-        for (int i=0; i< string.length(); i++) {
-//            if () {
-//                System.out.println(st);
-//            }
+        char[] ar = string.toCharArray();
+        for (int i = 0; i < ar.length; i++) {
+            if (string.charAt(i) != ' ') {
+                count++;
+            }
+        }
+            System.out.println(count);
         }
     }
-}
+
+
