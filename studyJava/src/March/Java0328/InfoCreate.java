@@ -1,7 +1,11 @@
 package March.Java0328;
 
+import March.Java0315.A;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class InfoCreate {
     public static void createInfo() {
@@ -31,8 +35,11 @@ public class InfoCreate {
         Edu.reLectures.add(new ReLecture("나는맹구", 3));
 
         Edu.reviews = new ArrayList<>();
-//        Edu.reviews.add(new Review(101, 9, "재밌어요", "나는짱구", 1));
-        Edu.reviews.add(new Review(102, 8, "유익해요", "나는철수", 2));
-        Edu.reviews.add(new Review(103, 5, "아쉬워요", "나는훈이", 1));
+
+        Edu.teachers = new ArrayList<>();
+        Edu.teachers.add(new Teacher("개나리반", "JAVA", "채송화" ));
+
+        Edu.lectureTeachers = new ArrayList<>();
+        Edu.lectureTeachers.add(new LectureTeacher("채송화",1));
     }
 }

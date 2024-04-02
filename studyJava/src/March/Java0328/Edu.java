@@ -2,7 +2,10 @@ package March.Java0328;
 
 import March.Java0326.A;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
 public class Edu {
@@ -10,6 +13,8 @@ public class Edu {
     static ArrayList<Lecture> lectures;
     static ArrayList<ReLecture> reLectures;
     static ArrayList<Review> reviews;
+    static ArrayList<Teacher> teachers;
+    static ArrayList<LectureTeacher> lectureTeachers;
 
     public static void main(String[] args) {
         // 정보 초기화
@@ -23,6 +28,10 @@ public class Edu {
         getEmailByLectureTitle("Python");
 
         createReview(8, "재밌어요", "나는짱구", 1);
+
+        getTeacherByLectureID(1);
+
+        getLectureTitleListByTeacherID("개나리반");
     }
 
     public static void getLoginIdByLectureId(int lectureID) {
@@ -77,24 +86,43 @@ public class Edu {
             return false;
         }
 
-            for (int i = 0; i < reviews.size(); i++) {
-                if (Objects.equals(reviews.get(i).getUserID(), userID)) {
-                    System.out.println("하나의 강의에만 리뷰를 남길 수 있습니다.");
-                    return false;
-                }
+        for (int i = 0; i < reviews.size(); i++) {
+            if (Objects.equals(reviews.get(i).getUserID(), userID)) {
+                System.out.println("하나의 강의에만 리뷰를 남길 수 있습니다.");
+                return false;
             }
+        }
 
-            for (int i = 0; i < reLectures.size(); i++) {
-                if (reLectures.get(i).lectureID == lectureID) {
-                    String uID = reLectures.get(i).getUserID();
-                    if (userID == uID) {
-                        break;
-                    }
-                    System.out.println("본인이 수강한 강의만 리뷰할 수 있습니다.");
-                    return false;
+        for (int i = 0; i < reLectures.size(); i++) {
+            if (reLectures.get(i).lectureID == lectureID) {
+                String uID = reLectures.get(i).getUserID();
+                if (userID == uID) {
+                    break;
                 }
+                System.out.println("본인이 수강한 강의만 리뷰할 수 있습니다.");
+                return false;
             }
-            return true;
+        }
+        reviews.add(new Review(reviews.size() + 1, rating, text, userID, lectureID));
+        System.out.println(reviews.toString());
+        return true;
+    }
+
+    public static void getTeacherByLectureID(int lectureID) {
+        for (int i = 0; i < lectureTeachers.size(); i++) {
+            if (lectureTeachers.get(i).getLectureID() == lectureID) {
+                System.out.println(lectureTeachers.get(i).tName);
+            }
         }
     }
 
+
+    public static void getLectureTitleListByTeacherID(String teacherID) {
+        List<String> lecList = new LinkedList<>();
+        lecList.add("JAVA");
+        lecList.add("Python");
+
+
+        System.out.println(lecList);
+    }
+}
