@@ -1,23 +1,23 @@
 package March.Java0328;
 
 public class LectureTeacher {
-    String tName;
+    String teacherID;
     int lectureID;
 
     public LectureTeacher() {
     }
 
-    public LectureTeacher(String tName, int lectureID) {
-        this.tName = tName;
+    public LectureTeacher(String teacherID, int lectureID) {
+        this.teacherID = teacherID;
         this.lectureID = lectureID;
     }
 
-    public String gettName() {
-        return tName;
+    public String getTeacherID() {
+        return teacherID;
     }
 
-    public void settName(String tName) {
-        this.tName = tName;
+    public void setTeacherID(String teacherID) {
+        this.teacherID = teacherID;
     }
 
     public int getLectureID() {
@@ -31,8 +31,8 @@ public class LectureTeacher {
     @Override
     public String toString() {
         return "LectureTeacher{" +
-                "tName='" + tName + '\'' +
-                ", lectureID='" + lectureID + '\'' +
+                "teacherID='" + teacherID + '\'' +
+                ", lectureID=" + lectureID +
                 '}';
     }
 }

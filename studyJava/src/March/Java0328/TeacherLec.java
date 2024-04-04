@@ -1,12 +1,15 @@
 package March.Java0328;
 
-public class Teacher {
+public class TeacherLec {
     String teacherID;
-    String tName;
+    String lecName;
 
-    public Teacher(String teacherID, String tName) {
+    public TeacherLec() {
+    }
+
+    public TeacherLec(String teacherID, String lecName) {
         this.teacherID = teacherID;
-        this.tName = tName;
+        this.lecName = lecName;
     }
 
     public String getTeacherID() {
@@ -17,19 +20,19 @@ public class Teacher {
         this.teacherID = teacherID;
     }
 
-    public String gettName() {
-        return tName;
+    public String getLecName() {
+        return lecName;
     }
 
-    public void settName(String tName) {
-        this.tName = tName;
+    public void setLecName(String lecName) {
+        this.lecName = lecName;
     }
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "TeacherLec{" +
                 "teacherID='" + teacherID + '\'' +
-                ", tName='" + tName + '\'' +
+                ", lecName='" + lecName + '\'' +
                 '}';
     }
 }

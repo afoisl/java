@@ -1,4 +1,4 @@
-package March.Java0403;
+package April.Java0403;
 
 interface AA {  // 함수형 인터페이스
     void abc();

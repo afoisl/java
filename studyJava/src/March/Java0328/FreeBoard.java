@@ -1,12 +1,13 @@
 package March.Java0328;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FreeBoard {
     String freeBoardID;
     String content;
     String userID;
-    List<Reply> replies;
+    List<Reply> replies = new ArrayList<>();
 
     public FreeBoard() {
     }

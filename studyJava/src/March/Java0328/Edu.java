@@ -1,10 +1,6 @@
 package March.Java0328;
 
-import March.Java0326.A;
-
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
@@ -15,6 +11,9 @@ public class Edu {
     static ArrayList<Review> reviews;
     static ArrayList<Teacher> teachers;
     static ArrayList<LectureTeacher> lectureTeachers;
+    static ArrayList<TeacherLec> teacherLecs;
+    static ArrayList<Reply> replies;
+
 
     public static void main(String[] args) {
         // 정보 초기화
@@ -31,7 +30,11 @@ public class Edu {
 
         getTeacherByLectureID(1);
 
-        getLectureTitleListByTeacherID("개나리반");
+//        getLectureTitleListByTeacherID("개나리반");
+
+        addContent();
+
+
     }
 
     public static void getLoginIdByLectureId(int lectureID) {
@@ -111,18 +114,28 @@ public class Edu {
     public static void getTeacherByLectureID(int lectureID) {
         for (int i = 0; i < lectureTeachers.size(); i++) {
             if (lectureTeachers.get(i).getLectureID() == lectureID) {
-                System.out.println(lectureTeachers.get(i).tName);
+                String teacherId = lectureTeachers.get(i).getTeacherID();
+                for (int j = 0; j < teachers.size(); j++) {
+                    if (teachers.get(j).getTeacherID().equals(teacherId)) {
+                        String teacherName = teachers.get(i).gettName();
+                        System.out.println(teacherName);
+                    }
+                }
             }
         }
     }
 
 
-    public static void getLectureTitleListByTeacherID(String teacherID) {
-        List<String> lecList = new LinkedList<>();
-        lecList.add("JAVA");
-        lecList.add("Python");
+//    public static List<String> getLectureTitleListByTeacherID(String teacherID) {
+//        List<String> lecLists = new ArrayList<>();
+//        for (int i=0; i<lecLists.size(); i++) {
+//            if (lecList.getTeacherID().equals(teacherID)) {
+//                lecLists.add(lecList.());
+//            }
+//        }
+//    }
 
-
-        System.out.println(lecList);
+    public static void addContent() {
+        replies.add(new Reply());
     }
 }

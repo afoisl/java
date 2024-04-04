@@ -37,9 +37,15 @@ public class InfoCreate {
         Edu.reviews = new ArrayList<>();
 
         Edu.teachers = new ArrayList<>();
-        Edu.teachers.add(new Teacher("개나리반", "JAVA", "채송화" ));
+        Edu.teachers.add(new Teacher("개나리반", "채송화" ));
 
         Edu.lectureTeachers = new ArrayList<>();
         Edu.lectureTeachers.add(new LectureTeacher("채송화",1));
+
+        Edu.teacherLecs = new ArrayList<>();
+        Edu.teacherLecs.add(new TeacherLec("개나리반", "JAVA"));
+
+        Edu.replies = new ArrayList<>();
+
     }
 }

@@ -1,4 +1,4 @@
-package March.Java0403;
+package April.Java0403;
 
 interface A {
     void method1(); // 입력없고 리턴없음
