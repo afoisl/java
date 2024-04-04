@@ -122,7 +122,6 @@ public class Q4 {
     public static SimpleCarInfo[] sendCarInfo(List<MyCar> carList) {
         SimpleCarInfo[] cars = new SimpleCarInfo[carList.size()];
         for (int i=0; i< carList.size(); i++) {
-            cars = carList.toArray(new SimpleCarInfo[2]);
 
         }
 

@@ -50,7 +50,7 @@ public class Edu {
             if (reLectures.get(i).getUserID().equals(userID)) {
                 int lectureID = reLectures.get(i).lectureID;
                 for (int j = 0; j < lectures.size(); j++) {
-                    if (lectures.get(j).lectureID == lectureID) {
+                    if (lectures.get(j).getLectureID() == lectureID) {
                         String lectureTitle = lectures.get(j).getTitle();
                         System.out.println(lectureTitle);
                     }

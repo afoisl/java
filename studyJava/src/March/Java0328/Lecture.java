@@ -1,11 +1,11 @@
 package March.Java0328;
 
 public class Lecture {
-    int lectureID;
-    String title;
-    int numOfStu;
-    int playTime;
-    Category Category;
+    private int lectureID;
+    private String title;
+    private int numOfStu;
+    private int playTime;
+    private Category Category;
 
     public Lecture() {
     }

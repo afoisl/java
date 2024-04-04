@@ -1,8 +1,8 @@
 package March.Java0328;
 
 public class ReLecture {
-    String userID;
-    int lectureID;
+    protected String userID;
+    protected int lectureID;
 
     public ReLecture() {
     }
