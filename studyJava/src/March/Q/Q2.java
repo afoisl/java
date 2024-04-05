@@ -24,9 +24,5 @@ public class Q2 {
         }if (input == 2) {
             double temp = sc.nextDouble();
             System.out.println("섭씨 " + temp + "도는 화씨 " + ((9 * temp) / 5) + 32 + "도");
-        }
-        double result;
-
-
-    }
+        }    }
 }

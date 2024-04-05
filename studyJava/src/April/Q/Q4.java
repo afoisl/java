@@ -121,10 +121,10 @@ public class Q4 {
 
     public static SimpleCarInfo[] sendCarInfo(List<MyCar> carList) {
         SimpleCarInfo[] cars = new SimpleCarInfo[carList.size()];
-        for (int i=0; i< carList.size(); i++) {
-
+        for (int i=0; i<carList.size(); i++) {
+            MyCar myCar = carList.get(i);
+            cars[i] = new SimpleCarInfo(myCar.model, myCar.color);
         }
-
         return cars;
     }
 }

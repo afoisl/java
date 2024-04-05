@@ -13,7 +13,7 @@ public class Q1 {
         String mmm = "";
         for (int i=0; i<str.length(); i++) {
             char ch = str.charAt(i);
-            if (Character.isUpperCase(ch)) {
+            if (Character.isUpperCase(ch)) {  // 메서드는 인터넷 참고 했습니다!
                 mmm += Character.toLowerCase(ch);
             } else {
                 mmm += Character.toUpperCase(ch);

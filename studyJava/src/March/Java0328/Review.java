@@ -1,9 +1,9 @@
 package March.Java0328;
 
 public class Review extends ReLecture {
-    int reviewID;
-    int rating;
-    String text;
+    private int reviewID;
+    private int rating;
+    private String text;
 
     public Review() {
     }

@@ -12,11 +12,10 @@ public class FreeBoard {
     public FreeBoard() {
     }
 
-    public FreeBoard(String freeBoardID, String content, String userID, List<Reply> replies) {
+    public FreeBoard(String freeBoardID, String content, String userID) {
         this.freeBoardID = freeBoardID;
         this.content = content;
         this.userID = userID;
-        this.replies = replies;
     }
 
     public String getFreeBoardID() {
@@ -50,6 +49,8 @@ public class FreeBoard {
     public void setReplies(List<Reply> replies) {
         this.replies.add(new Reply());
     }
+
+    public void setReplies(Reply reply) {replies.add(reply);}
 
     @Override
     public String toString() {
