@@ -14,7 +14,7 @@ public class InfoCreate {
         Edu.users.add(new User("짱구", LocalDate.of(2000, 1, 1), "나는짱구", "비밀번호"
                 , 000101 - 311111, 010 - 1234 - 5678, "Daegu", "Wkdrn@gmail.com"));
         Edu.users.add(new User("철수", LocalDate.of(2000, 1, 2), "나는철수", "비밀번호"
-                , 000102 - 3111112, 010 - 2345 - 5678, "Seoul", "cjftn@gmail.com"));
+                , 000102 - 311112, 010 - 2345 - 5678, "Seoul", "cjftn@gmail.com"));
         Edu.users.add(new User("유리", LocalDate.of(2000, 1, 3), "나는유리", "비밀번호"
                 , 000103 - 411111, 010 - 3456 - 7890, "Gumi", "dbfl@gmail.com"));
         Edu.users.add(new User("훈이", LocalDate.of(2000, 1, 4), "나는훈이", "비밀번호"
